@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farah Zaman | Creative Web Developer</title>
+  <meta name="description" content="Farah Zaman - Creative Web Developer & Designer in Manchester. Built by Farah herself. Founder of Glovault Pixel Craft Studio & Aetheria Jewl." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pink: #ff5fa2;
+      --pink-dark: #ff2f8b;
+      --bg: #fff7fa;
+      --text: #2a1b26;
+      --muted: #7d5874;
+      --card-bg: #ffe4ef;
+      --radius: 16px;
+      --shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
+    body { font-family:'Poppins', sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden; }
+    a { color:var(--pink); text-decoration:none; transition:0.3s; }
+    a:hover { color:var(--pink-dark); }
+
+    nav {
+      position:fixed; inset-block-start:0; inline-size:100%; background:rgba(255,255,255,0.85); backdrop-filter:blur(10px);
+      box-shadow:0 2px 10px rgba(255,105,180,0.15); z-index:100;
+    }
+    nav .container { inline-size:90%; max-inline-size:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
+    .logo { font-weight:700; font-size:1.2rem; color:var(--pink); }
+    .nav-links a { margin-inline-start:20px; font-weight:500; color:var(--text); }
+    .nav-links a:hover { color:var(--pink); }
+
+    header {
+      position:relative; padding:140px 20px 80px; text-align:center;
+      background:linear-gradient(135deg, var(--pink), var(--pink-dark)); color:#fff;
+    }
+    .profile-pic { inline-size:120px; block-size:120px; border-radius:50%; object-fit:cover; border:4px solid #fff; margin-block-end:16px; box-shadow:var(--shadow); }
+    header h1 { font-size:2.4rem; margin-block-end:8px; }
+    header p { font-size:1.1rem; color:#ffeaf3; }
+
+    section { inline-size:90%; max-inline-size:1100px; margin:0 auto; padding:80px 0; }
+    h2 { text-align:center; color:var(--pink); margin-block-end:20px; font-size:2rem; }
+    h3 { color:var(--pink-dark); margin-block-end:10px; }
+    h4 { margin-block-end:10px; }
+    p { margin-block-end:12px; line-height:1.6; }
+    .card { background:var(--card-bg); padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-block-start:20px; }
+
+
+    .timeline { position:relative; margin:60px 0; padding-inline-start:0; }
+    .timeline::before { content:''; position:absolute; inset-inline-start:50%; inset-block-start:0; transform:translateX(-50%); inline-size:3px; block-size:100%; background:var(--pink); }
+    .timeline-item { position:relative; inline-size:50%; padding:20px 30px; }
+    .timeline-item-content { background:#fff; padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); }
+    .timeline-item.left { inset-inline-start:0; text-align:end; }
+    .timeline-item.right { inset-inline-start:50%; text-align:start; }
+    .timeline-item.left .timeline-item-content { margin-inline-end:40px; border-start-end-radius:0; }
+    .timeline-item.right .timeline-item-content { margin-inline-start:40px; border-start-start-radius:0; }
+    @media(max-inline-size:800px) {
+      .timeline::before { inset-inline-start:8px; }
+      .timeline-item { width:100%; padding-left:40px; text-align:start !important; }
+      .timeline-item.right { left:0; }
+      .timeline-item-content { margin:20px 0; }
+    }
+
+    
+    .projects-grid, .gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; margin-top:30px; }
+    .project-card, .gallery img { border-radius:var(--radius); box-shadow:var(--shadow); transition:transform 0.3s ease; }
+    .project-card:hover, .gallery img:hover { transform:translateY(-5px) scale(1.03); }
+    .project-card img, .gallery img { width:100%; height:200px; object-fit:cover; }
+    .project-card .info { padding:16px; }
+
+    .highlight-box { background:#fff0f6; padding:16px; border-left:4px solid var(--pink); border-radius:12px; margin:20px 0; color:var(--muted); font-style:italic; }
+
+   
+    footer { text-align:center; background:#ffd6e8; color:var(--muted); padding:24px 0; font-size:0.95rem; }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">Farah Zaman</div>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#agency">My Agency</a>
+      <a href="#brand">My Brand</a>
+      <a href="#timeline">My Journey</a>
+      <a href="#projects">My Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img src="farah.jpg"alt="Profile Picture" class="profile-pic">
+  <h1>Hi, I am Farah Zaman 👋✨</h1>
+<p>
+ 
+ I am a passionate Computer Science student with strong enthusiasm for coding, technology and continuous learning. I enjoy exploring new Ideas and bringing them to life through creative digital solutions. I have designed and developed my own personal website as well as the official site for my brand, Glovault - Web Agency I founded this august 2025 and currently mange it .My hands on experience in Web development ,Combined with entrepreneur mindset has strengthen my problem solving ,design and leadership skills I am  eager to apply my technical knowledge and creativity to new challenges and contribute meaningfully to innovate projects .
+
+</p>
+
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>🎓 <strong>Education:</strong></p>
+    <ul>
+      <li><strong>Abraham Moss High School</strong> — 9 GCSEs from grade (4-9)</li>
+      <li><strong>Loreto College</strong> — A-Levels in Computer Science, Psychology, and Chemistry</li>
+      <li><strong>Manchester Metropolitan University</strong> — BSc (Hons) Computer Science, Year 2</li>
+    </ul>
+
+    <p>- I am second-year Computer Science student with a passion for using technology to solve real-world problems. I enjoy turning ideas into clean, functional websites and applications.</p>
+
+    <p> -I have built websites for family and friends to help them launch small businesses — combining my love for design, development, and meaningful impact.</p>
+
+    <p> -I am currently working on a personal project called <strong>MunchTok</strong> — a food discovery app that helps users find local dishes they'll love. Scroll down to learn more about it!</p>
+
+    <p> -I have also launched my own web agency called <strong>Glovault</strong>, where I design and build websites for individuals and small businesses.<br>
+    <a href="#agency">Click here</a> or scroll down to learn more about the agency and our work.</p>
+  </div>
+</section>
+
+
+<section id="agency">
+  <h2>Glovault Pixel Craft Studio</h2>
+  <div class="card">
+    <p>
+      I am the Founder and Lead Designer at <strong>Glovault Pixel Craft Studio</strong> — a Manchester-based web design agency focused on helping individuals and small businesses bring their digital ideas to life.
+    </p>
+    <p>
+      Leading Glovault has taught me how to collaborate with teams, communicate effectively with clients, and juggle multiple responsibilities at once. It’s been a huge part of my growth as both a developer and a professional.
+    </p>
+    <h6>u can view it here by clicking the link below</h6>
+      <p>
+    🔗 <a href="https://www.google.com/search?q=glovault+manchester+agency" target="_blank" rel="noopener noreferrer">
+      View on Google
+    </a>
+  </p>
+
+  </div>
+</section>
+
+
+  <div class="card" style="margin-top:40px;">
+    <h3>Vape Mockup Design Project</h3>
+
+    
+    <div class="highlight-box">
+      💡 Skills & Lessons Learned:<br>
+      - Front-end development (HTML, CSS, JS)<br>
+      - Responsive & clean UI/UX design<br>
+      - Time management & meeting deadlines<br>
+      - Client communication & feedback handling<br>
+      - Problem-solving & iterative improvements
+  
+    </div>
+
+   
+    <div style="margin:20px 0;">
+      <h4 style="color: var(--pink);">🎥 Website Demo</h4>
+      <iframe width="100%" height="400" src="new.mp4" title="Vape Shop Demo" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+    </div>
+
+    <p>I built a full front-end mockup for a Vape Shop in Bradford, coding every part myself to showcase their services, portfolio, and contact features. The project was designed to be responsive, intuitive, and visually clean.</p>
+
+    <blockquote class="highlight-box">
+      “Even projects that don’t go live teach critical lessons — planning, prioritization, and adapting to feedback. This project strengthened my time management and problem-solving skills.”
+    </blockquote>
+
+    <div style="margin:20px 0;">
+      <h4 style="color: var(--pink);">🎥 Another Demo</h4>
+      <iframe width="100%" height="400" src="https://res.cloudinary.com/djfr08um8/video/upload/v1759936342/recording_keivvn.mp4" title="Vape Shop Demo 2" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+    </div>
+
+    <p>After this, i bulit my frontended Scrollable Food Video/images App| Mobile Frontend (Flutter, Dart,UI/UX, Gesture Handling): <strong>Munch Tok</strong> </p>
+
+   
+    <div style="margin-top:20px;">
+      <h4 style="color: var(--pink);">📸 Project Gallery</h4>
+      <div class="gallery">
+        <img src="burger.jpg" alt="Construction Homepage">
+        <img src="alert.jpg" alt="Services Page">
+        <img src="profile.jpg" alt="Contact Page">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brand">
+  <h2> My Brand Aetheria Jewl 💎</h2>
+  <div class="card">
+    <p>Founded <strong>Aetheria Jewl</strong> — a jewelry brand blending elegance and digital craftsmanship. Built the website myself and achieved 80%+ design and performance metrics.</p>
+    <p>🌐 Visit: <a href="https://aetheriajewl.com" target="_blank">aetheriajewl.com</a></p>
+  </div>
+  <div class="gallery">
+    <img src="gold.jpg" alt="Jewelry piece 1">
+    <img src="blue.jpg" alt="Jewelry piece 2">
+    <img src="basketball.jpg" alt="Jewelry piece 3">
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>Timeline</h2>
+  <p style="text-align:center; color:var(--muted); margin-bottom:30px;">Where it all began</p>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-item-content">
+        <h3>Creative Spark ✨</h3>
+        <p><strong>2010 - 2016</strong></p>
+        <p>Discovered a passion for design and creativity early on.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-item-content">
+        <h3>Abraham Moss High School</h3>
+        <p><strong>2016 - 2021</strong></p>
+        <p>Excelled in Computing and Creative subjects. Achieved 5+ GCSEs Grade 9.</p>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-item-content">
+        <h3>Loreto College</h3>
+        <p><strong>2021 - 2023</strong></p>
+        <p>Focused on Computer Science and Design projects.</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-item-content">
+        <h3>Glovault Studio</h3>
+        <p><strong>2023</strong></p>
+        <p>Founded my creative web agency in Manchester.</p>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="timeline-item-content">
+        <h3>Aetheria Jewl</h3>
+        <p><strong>2024</strong></p>
+        <p>Launched my own jewelry brand and built the full website myself.</p>
+      <p>This did not only improve my stills for coding but helpe improve my entepenure skills too to think from the bussiness aspect which has improved my problem-solvingskills</p>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="timeline-item-content">
+        <h3>MMU — Computer Science</h3>
+        <p><strong>2025</strong></p>
+        <p>Currently pursuing BSc Computer Science at MMU.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+    <iframe width="100%" height="400" src="https://res.cloudinary.com/djfr08um8/video/upload/v1759936342/recording_keivvn.mp4" title="Vape Shop Demo 2" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+     <iframe width="100%" height="400" src="https://res.cloudinary.com/djfr08um8/video/upload/v1759936342/recording_keivvn.mp4" title="Vape Shop Demo 2" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+      <div class="info">
+        <h3>Client Website</h3>
+        <p>A custom responsive site for a creative business.</p>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="project-card">
+      <img src="gold.jpg" alt="Aetheria Jewl Project">
+      <img src="basketball.jpg" alt="Aetheria Jewl Project">
+      <div class="info">
+        <h3>Aetheria Jewl</h3>
+        <p>Luxury jewelry brand website built from scratch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card" style="text-align:center;">
+    <p>📍 20 Swan St, Manchester M4 5JW</p>
+    <p>📞 <a href="tel:07448252094">07448 252094</a></p>
+    <p>📧 <a href="mailto:hello@glovaultstudio.com">hello@glovaultstudio.com</a></p>
+    <p>💬 Open to creative collaborations & projects!</p>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Farah Zaman • Designed & Coded by Me 💻
+</footer>
+
