@@ -17,10 +17,12 @@
       --radius: 16px;
       --shadow: 0 4px 18px rgba(0,0,0,0.08);
     }
+
     * { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
     body { font-family:'Poppins', sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden; }
     a { color:var(--pink); text-decoration:none; transition:0.3s; }
     a:hover { color:var(--pink-dark); }
+
     nav {
       position:fixed; inset-block-start:0; inline-size:100%; background:rgba(255,255,255,0.85); backdrop-filter:blur(10px);
       box-shadow:0 2px 10px rgba(255,105,180,0.15); z-index:100;
@@ -29,6 +31,7 @@
     .logo { font-weight:700; font-size:1.2rem; color:var(--pink); }
     .nav-links a { margin-inline-start:20px; font-weight:500; color:var(--text); }
     .nav-links a:hover { color:var(--pink); }
+
     header {
       position:relative; padding:140px 20px 80px; text-align:center;
       background:linear-gradient(135deg, var(--pink), var(--pink-dark)); color:#fff;
@@ -36,12 +39,14 @@
     .profile-pic { inline-size:120px; block-size:120px; border-radius:50%; object-fit:cover; border:4px solid #fff; margin-block-end:16px; box-shadow:var(--shadow); }
     header h1 { font-size:2.4rem; margin-block-end:8px; }
     header p { font-size:1.1rem; color:#ffeaf3; }
+
     section { inline-size:90%; max-inline-size:1100px; margin:0 auto; padding:80px 0; }
     h2 { text-align:center; color:var(--pink); margin-block-end:20px; font-size:2rem; }
     h3 { color:var(--pink-dark); margin-block-end:10px; }
     h4 { margin-block-end:10px; }
     p { margin-block-end:12px; line-height:1.6; }
     .card { background:var(--card-bg); padding:20px; border-radius:var(--radius); box-shadow:var(--shadow); margin-block-start:20px; }
+
     .timeline { position:relative; margin:60px 0; padding-inline-start:0; }
     .timeline::before { content:''; position:absolute; inset-inline-start:50%; inset-block-start:0; transform:translateX(-50%); inline-size:3px; block-size:100%; background:var(--pink); }
     .timeline-item { position:relative; inline-size:50%; padding:20px 30px; }
@@ -56,12 +61,15 @@
       .timeline-item.right { left:0; }
       .timeline-item-content { margin:20px 0; }
     }
+
     .projects-grid, .gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; margin-top:30px; }
     .project-card, .gallery img { border-radius:var(--radius); box-shadow:var(--shadow); transition:transform 0.3s ease; }
     .project-card:hover, .gallery img:hover { transform:translateY(-5px) scale(1.03); }
     .project-card img, .gallery img { width:100%; height:200px; object-fit:cover; }
     .project-card .info { padding:16px; }
+
     .highlight-box { background:#fff0f6; padding:16px; border-left:4px solid var(--pink); border-radius:12px; margin:20px 0; color:var(--muted); font-style:italic; }
+
     footer { text-align:center; background:#ffd6e8; color:var(--muted); padding:24px 0; font-size:0.95rem; }
   </style>
 </head>
@@ -86,7 +94,7 @@
   <img src="farah.jpg" alt="Profile Picture" class="profile-pic">
   <h1>Hi, I am Farah Zaman :)</h1>
   <p>
-    I am a passionate Computer Science student with strong enthusiasm for coding, technology, and continuous learning. I enjoy exploring new ideas and bringing them to life through creative digital solutions. I have designed and developed my own personal website as well as the official site for my brand, Glovault — Web Agency I founded in August 2025 and currently manage. My hands-on experience in web development, combined with an entrepreneurial mindset, has strengthened my problem-solving, design, and leadership skills. I am eager to apply my technical knowledge and creativity to new challenges and contribute meaningfully to innovative projects.
+    I am a passionate Computer Science student with strong enthusiasm for coding, technology and continuous learning. I enjoy exploring new ideas and bringing them to life through creative digital solutions. I have designed and developed my own personal website as well as the official site for my brand, Glovault - Web Agency I founded this August 2025 and currently manage it. My hands-on experience in web development, combined with an entrepreneurial mindset, has strengthened my problem-solving, design, and leadership skills. I am eager to apply my technical knowledge and creativity to new challenges and contribute meaningfully to innovative projects.
   </p>
 </header>
 
@@ -99,9 +107,13 @@
       <li><strong>Loreto College</strong> — A-Levels in Computer Science, Psychology, and Chemistry</li>
       <li><strong>Manchester Metropolitan University</strong> — BSc (Hons) Computer Science, Year 2</li>
     </ul>
+
     <p>- I am a second-year Computer Science student with a passion for using technology to solve real-world problems. I enjoy turning ideas into clean, functional websites and applications.</p>
+
     <p>- I have built websites for family and friends to help them launch small businesses — combining my love for design, development, and meaningful impact.</p>
+
     <p>- I am currently working on a personal project called <strong>MunchTok</strong> — a food discovery app that helps users find local dishes they'll love. Scroll down to learn more about it!</p>
+
     <p>- I have also launched my own web agency called <strong>Glovault</strong>, where I design and build websites for individuals and small businesses.<br>
     <a href="#agency">Click here</a> or scroll down to learn more about the agency and our work.</p>
   </div>
@@ -110,15 +122,24 @@
 <section id="agency">
   <h2>Glovault Pixel Craft Studio</h2>
   <div class="card">
-    <p>I am the Founder and Lead Designer at <strong>Glovault Pixel Craft Studio</strong> — a Manchester-based web design agency focused on helping individuals and small businesses bring their digital ideas to life.</p>
-    <p>Leading Glovault has taught me how to collaborate with teams, communicate effectively with clients, and juggle multiple responsibilities at once. It’s been a huge part of my growth as both a developer and a professional.</p>
-    <h6>You can view it here by clicking the link below:</h6>
-    <p>🔗 <a href="https://www.google.com/search?q=glovault+manchester+agency" target="_blank" rel="noopener noreferrer">View on Google</a></p>
+    <p>
+      I am the Founder and Lead Designer at <strong>Glovault Pixel Craft Studio</strong> — a Manchester-based web design agency focused on helping individuals and small businesses bring their digital ideas to life.
+    </p>
+    <p>
+      Leading Glovault has taught me how to collaborate with teams, communicate effectively with clients, and juggle multiple responsibilities at once. It’s been a huge part of my growth as both a developer and a professional.
+    </p>
+    <h6>You can view it here by clicking the link below</h6>
+    <p>
+      🔗 <a href="https://www.google.com/search?q=glovault+manchester+agency" target="_blank" rel="noopener noreferrer">
+      View on Google
+      </a>
+    </p>
   </div>
 </section>
 
 <div class="card" style="margin-top:40px;">
   <h3>Vape Mockup Design Project</h3>
+
   <div class="highlight-box">
     💡 Skills & Lessons Learned:<br>
     - Front-end development (HTML, CSS, JS)<br>
@@ -145,19 +166,23 @@
   </div>
 
   <p>
-    After this, I coded MunchTok – Scrollable Food Discovery App (Frontend Prototype). Built with React, Tailwind CSS, and Framer Motion, MunchTok is a mobile-first frontend prototype that brings TikTok-style vertical scrolling to food discovery. Users can swipe through short, engaging food videos and conceptually order their favorite dishes via an integrated cart linking to Uber Eats. I developed a smooth, scrollable UI with modular components for feed items, cart interaction, and navigation, styled for responsive design across devices. The prototype emphasizes intuitive UI/UX patterns, performance optimization, and interaction design, while the codebase is structured for future backend integration.
+    After this, I coded MunchTok – Scrollable Food Discovery App (Frontend Prototype). Built with React, Tailwind CSS, and Framer Motion, MunchTok is a mobile-first frontend prototype that brings TikTok-style vertical scrolling to food discovery. Users can swipe through short, engaging food videos and conceptually order their favorite dishes via an integrated cart linking to Uber Eats. I developed a smooth, scrollable UI with modular components for feed items, cart interaction, and navigation, styled for responsive design across devices. The prototype emphasizes intuitive UI/UX patterns, performance optimization, and interaction design, while the codebase is structured for future backend integration, including content uploads, user accounts, and API-driven ordering.
     <strong>
       MunchTok — which you can view on my 
-      <a href="https://www.linkedin.com/posts/farah-zaman-132b21349_coded-munchtok-scrollable-food-discovery-activity-7386735982383095809-JoFT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFcyfXYBWe2wTVkGWV702v2eLqrPogTd0vQ" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/posts/farah-zaman-132b21349_coded-munchtok-scrollable-food-discovery-activity-7386735982383095809-JoFT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFcyfXYBWe2wTVkGWV702v2eLqrPogTd0vQ" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         LinkedIn
+      </a>
     </strong>.
   </p>
 
   <div style="margin-top:20px;">
     <h4 style="color: var(--pink);">Project Gallery</h4>
     <div class="gallery">
-      <img src="burger.jpg" alt="Construction Homepage">
-      <img src="animal.jpg" alt="Services Page">
-      <img src="gold.jpg" alt="Contact Page">
+      <img src="burger.jpg" alt="Burger">
+      <img src="animal.jpg" alt="Animal">
+      <img src="gold.jpg" alt="Gold Jewelry">
     </div>
   </div>
 </div>
@@ -179,7 +204,6 @@
   <h2>Timeline</h2>
   <p style="text-align:center; color:var(--muted); margin-bottom:30px;">Where it all began</p>
   <div class="timeline">
-
     <div class="timeline-item left">
       <div class="timeline-item-content">
         <h3>Creative Spark</h3>
@@ -187,7 +211,6 @@
         <p>Discovered a passion for design and creativity early on.</p>
       </div>
     </div>
-
     <div class="timeline-item right">
       <div class="timeline-item-content">
         <h3>Abraham Moss High School</h3>
@@ -195,7 +218,6 @@
         <p>Excelled in Computing and Creative subjects. Achieved 5+ GCSEs Grade 9.</p>
       </div>
     </div>
-
     <div class="timeline-item left">
       <div class="timeline-item-content">
         <h3>Loreto College</h3>
@@ -203,7 +225,6 @@
         <p>Focused on Computer Science and Design projects.</p>
       </div>
     </div>
-
     <div class="timeline-item right">
       <div class="timeline-item-content">
         <h3>Boots — Beauty Specialist</h3>
@@ -212,7 +233,6 @@
         <p>Gained valuable skills in communication, teamwork, customer care, and sales. Learned how to use insights to improve performance and understand customer needs.</p>
       </div>
     </div>
-
     <div class="timeline-item left">
       <div class="timeline-item-content">
         <h3>Glovault Studio</h3>
@@ -220,16 +240,14 @@
         <p>Founded my web agency in Manchester.</p>
       </div>
     </div>
-
     <div class="timeline-item right">
       <div class="timeline-item-content">
         <h3>Aetheria Jewl</h3>
         <p><strong>2025</strong></p>
         <p>Launched my own jewelry brand and built the full website myself.</p>
-        <p>Strengthened coding skills and entrepreneurial mindset, thinking from a business perspective to improve problem-solving abilities.</p>
+        <p>This improved my coding skills and enhanced my entrepreneurial mindset by thinking from a business perspective, which improved my problem-solving skills.</p>
       </div>
     </div>
-
     <div class="timeline-item left">
       <div class="timeline-item-content">
         <h3>MMU — Computer Science</h3>
@@ -237,7 +255,6 @@
         <p>Currently pursuing BSc Computer Science.</p>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -277,7 +294,12 @@
   © <span id="year"></span> Farah Zaman 2025
 </footer>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
+</body>
+</html>
 
 
 
