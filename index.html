@@ -433,6 +433,23 @@
     font-size:0.68rem;
     color:var(--paper-dim);
   }
+
+  /* ---------- INTERNSHIP ---------- */
+  .int-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:50px; }
+  .int-grid h3{ font-size:1.15rem; margin-bottom:10px; }
+  .int-grid p{ color:var(--paper-dim); font-size:0.9rem; }
+  .gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:50px; }
+  .shot{ border:1px solid var(--line); background:var(--ink-2); overflow:hidden; cursor:zoom-in; transition:border-color .25s ease, transform .25s ease; }
+  .shot:hover,.shot:focus-visible{ border-color:var(--brass-dim); transform:translateY(-3px); }
+  .shot img{ width:100%; aspect-ratio:4/3; object-fit:cover; filter:grayscale(15%); transition:filter .3s ease; }
+  .shot:hover img{ filter:none; }
+  .shot figcaption{ padding:14px 16px 16px; font-size:0.82rem; color:var(--paper-dim); display:flex; flex-direction:column; gap:4px; }
+  .shot figcaption span{ font-size:0.62rem; color:var(--brass); }
+  .lightbox{ position:fixed; inset:0; z-index:100; background:rgba(10,6,8,0.92); display:none; align-items:center; justify-content:center; padding:24px; cursor:zoom-out; }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-height:90vh; max-width:94vw; object-fit:contain; border:1px solid var(--line-strong); }
+  @media (max-width:900px){ .int-grid,.gallery{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:620px){ .int-grid,.gallery{ grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -443,6 +460,7 @@
     <div class="navlinks mono" id="navlinks">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#internship">Internship</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -454,9 +472,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-role mono">Computer Science — Manchester Metropolitan University</div>
+      <div class="hero-role mono">Computer Science, Final Year — Manchester Metropolitan University</div>
       <h1>Farah<br>Zaman</h1>
-      <p class="lede">I build clean, considered interfaces — from client freelance sites to production-facing prototypes. Currently in my second year, heading into a placement-focused third year.</p>
+      <p class="lede">I build, innovate and protect. I'm a final-year Computer Science student, a Course Rep and Ambassador, and I love turning ideas into real, secure projects.</p>
       <div class="cta-row">
         <a href="#projects" class="btn btn-solid">View Projects</a>
         <a href="#contact" class="btn btn-ghost">Get in Touch</a>
@@ -476,13 +494,12 @@
     <div class="reveal">
       <div class="eyebrow mono">About</div>
       <h2 class="section-title">Turning ideas into interfaces that actually work.</h2>
-      <p>I'm a second-year Computer Science student with a strong interest in web development, data, and design. I enjoy the whole arc of a project — understanding what someone actually needs, then building something clean and functional that delivers it.</p>
-      <p>Outside coursework, I take on freelance web projects, support a student with additional needs as a teaching assistant, and recently completed a data-focused industry placement. Each has sharpened a different part of how I work — technically, and with people.</p>
-    </div>
+<p>I'm a final-year Computer Science student aiming for a first-class degree. I bring fresh ideas and the drive to turn them into real, working projects.</p>
+      <p>I have worked in very different places, from retail to a professional office, and this has taught me to stay calm under pressure. Alongside my studies I represent my course as a Course Rep and Ambassador, take on freelance web projects, support a student with additional needs, and recently completed an 8-week internship building a pattern generator in Python.</p>
     <ul class="edu-list reveal">
       <li>
         <span class="school">Manchester Metropolitan University</span>
-        <span class="detail">BSc (Hons) Computer Science — Year 2</span>
+        <span class="detail">BSc (Hons) Computer Science — Final Year</span>
       </li>
       <li>
         <span class="school">Loreto College</span>
@@ -490,7 +507,7 @@
       </li>
       <li>
         <span class="school">Abraham Moss High School</span>
-        <span class="detail">9 GCSEs, grades 4–9</span>
+        <span class="detail">9 GCSEs, grades 6–9</span>
       </li>
     </ul>
   </div>
@@ -507,20 +524,37 @@
     <div class="exp-list reveal">
       <div class="exp-item">
         <div>
-          <div class="org mono">Urenco</div>
-          <div class="role">Data-Driven Placement</div>
-          <div class="when">8 weeks · 2026</div>
+          <div class="org mono">MMU · Computer Science</div>
+          <div class="role">Course Representative &amp; Ambassador</div>
+          <div class="when">Current · Final Year</div>
         </div>
         <div>
-          <p>An 8-week industry placement spanning data and textiles — applying data analysis to a live business problem and presenting findings to both technical and non-technical stakeholders. <em style="color:var(--paper-dim); opacity:0.8;">— add your specific project detail here</em></p>
+          <p>Elected voice for my Computer Science course, and now an official course ambassador — gathering student feedback, raising it with staff, and representing the course at events. A role that keeps me practising clear communication and advocating for other people.</p>
           <div class="tag-row">
-            <span class="tag">Data Analysis</span>
-            <span class="tag">Stakeholder Reporting</span>
-            <span class="tag">Cross-team Collaboration</span>
+            <span class="tag">Representation</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Communication</span>
           </div>
         </div>
       </div>
- 
+
+      <div class="exp-item">
+        <div>
+          <div class="org mono">Urenco</div>
+          <div class="role">Data-Driven Internship</div>
+          <div class="when">8 weeks · 2026</div>
+        </div>
+        <div>
+          <p>Built a Python parametric pattern generator that turns 3D body-scan measurements into DXF garment patterns, viewable in LibreCAD with every measurement labelled. Worked across Style3D, Lectra pattern digitising and hands-on sewing to connect code to real garment construction. <a href="#internship" style="color:var(--brass); border-bottom:1px solid var(--brass-dim);">See the full story →</a></p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Style3D</span>
+            <span class="tag">DXF / CAD</span>
+          </div>
+        </div>
+      </div>
+
       <div class="exp-item">
         <div>
           <div class="org mono">Empowering Learning</div>
@@ -544,7 +578,7 @@
           <div class="when">2025 — Present</div>
         </div>
         <div>
-          <p>Design and build responsive websites for individuals and small businesses across Manchester — gathering requirements, iterating on feedback, and delivering to deadline. Projects include a front-end mockup for a Bradford retailer and a full brand site for an independent jewellery label.</p>
+          <p>Design and build responsive websites for individuals and small businesses across Manchester, gathering requirements, iterating on feedback, and delivering to deadline. On my WordPress sites I also set up security to protect them from attacks. Projects include a front-end mockup for a Bradford retailer and a full brand site for an independent jewellery label. .</p>
           <div class="tag-row">
             <span class="tag">HTML / CSS / JS</span>
             <span class="tag">Client Communication</span>
@@ -556,6 +590,80 @@
   </div>
 </section>
  
+<section id="internship">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow mono">Internship · 8 Weeks</div>
+      <h2 class="section-title">Where code meets the cutting table.</h2>
+      <p class="section-lede">I joined because it combined two things I care about — technology and fashion design — and left having built a pattern generator that produces files professional design software can open.</p>
+    </div>
+
+    <div class="int-grid reveal">
+      <div class="spec-card">
+        <span class="tick-bl"></span><span class="tick-br"></span>
+        <span class="spec-num">01 — The project</span>
+        <h3>Parametric pattern generator</h3>
+        <p>A Python tool that takes measurements from 3D body scans and generates garment patterns automatically, exported as DXF and displayed in LibreCAD with all measurements labelled.</p>
+      </div>
+      <div class="spec-card">
+        <span class="tick-bl"></span><span class="tick-br"></span>
+        <span class="spec-num">02 — The challenge</span>
+        <h3>When the API said no</h3>
+        <p>The Style3D API couldn't display text in the 2D window as planned. I researched alternatives and pivoted to LibreCAD — a lesson in adapting when the first approach fails.</p>
+      </div>
+      <div class="spec-card">
+        <span class="tick-bl"></span><span class="tick-br"></span>
+        <span class="spec-num">03 — What I learned</span>
+        <h3>Technical + practical</h3>
+        <p>I learned Python geometry (curves, distances and angles), how to read and write files, and the DXF file format. I also used Lectra to digitise patterns</p>
+      </div>
+    </div>
+
+    <div class="tag-row reveal" style="margin-top:34px;">
+      <span class="tag">Python</span><span class="tag">Style3D</span><span class="tag">LibreCAD</span><span class="tag">DXF</span><span class="tag">3D Body Scans</span><span class="tag">Lectra</span><span class="tag">Geometry</span>
+    </div>
+
+    <div class="gallery reveal">
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-01.jpg" alt="Pattern generator open next to Style3D" loading="lazy">
+        <figcaption><span class="mono">FIG. 01</span>Code and 2D pattern view side by side with 3d results </figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-02.jpg" alt="Python code on the main monitor" loading="lazy">
+        <figcaption><span class="mono">FIG. 02</span>Processing body-scan data in Python (data analysis) </figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-03.jpg" alt="3D body scan figures and measurement sheet" loading="lazy">
+        <figcaption><span class="mono">FIG. 03</span>Scan data and the measurement sheets behind it</figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-04.jpg" alt="Body scan figures on the desk" loading="lazy">
+        <figcaption><span class="mono">FIG. 04</span>Comparing different body shapes from scans</figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-05.jpg" alt="Robotics and scanning lab" loading="lazy">
+        <figcaption><span class="mono">FIG. 05</span> scans were captured</figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-06.jpg" alt="Lab workstation with robot arm" loading="lazy">
+        <figcaption><span class="mono">FIG. 06</span>Robot-arm capture rig</figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-07.jpg" alt="Reviewing scan results on screen" loading="lazy">
+        <figcaption><span class="mono">FIG. 07</span>Working through scan output on site </figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-08.jpg" alt="Mannequins on the lab bench" loading="lazy">
+        <figcaption><span class="mono">FIG. 08</span>Mannequins used to check fit and form coded with python </figcaption>
+      </figure>
+      <figure class="shot" tabindex="0">
+        <img src="img/internship-09.jpg" alt="Large display showing a scanned figure" loading="lazy">
+        <figcaption><span class="mono">FIG. 09</span>Scan visualised on display</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section id="projects">
   <div class="wrap">
     <div class="reveal">
@@ -579,8 +687,8 @@
         <div class="proj-img"><img src="https://farahzaman.netlify.app/animal.jpg" alt="Nature Spotter project"></div>
         <div class="proj-body">
           <span class="p-num mono">FIG. 02</span>
-          <h3>Nature Spotter</h3>
-          <p>A team project built with six other students — a platform for recording and sharing wildlife observations, covering the full development lifecycle from requirements to testing.</p>
+          <h3>Nature Spotter Team leader </h3>
+          <p> A team project built with six other students — a platform for recording and sharing wildlife observations, covering the full development lifecycle from requirements to testing.</p>
           <a class="proj-link" href="#" onclick="return false;">Team project · MMU →</a>
         </div>
       </div>
@@ -618,11 +726,15 @@
       <span class="skill-pill">HTML / CSS</span>
       <span class="skill-pill">JavaScript</span>
       <span class="skill-pill">React</span>
+      <span class="skill-pill">Python</span>
       <span class="skill-pill">Tailwind CSS</span>
       <span class="skill-pill">Framer Motion</span>
       <span class="skill-pill">Git / GitHub</span>
       <span class="skill-pill">Responsive Design</span>
       <span class="skill-pill">Data Analysis</span>
+      <span class="skill-pill">CAD / DXF</span>
+      <span class="skill-pill">Style3D</span>
+      <span class="skill-pill">Leadership</span>
       <span class="skill-pill">Client Communication</span>
       <span class="skill-pill">Team Collaboration</span>
     </div>
@@ -647,7 +759,7 @@
         <div class="log-content">
           <div class="log-meta"><span class="hash mono">2022–2024</span><span class="yr mono">COLLEGE</span></div>
           <h4>Loreto College</h4>
-          <p>A-Levels in Computer Science, Psychology, and Chemistry.</p>
+          <p>A-Levels in Computer Science, Psychology, and Maths.</p>
         </div>
       </div>
       <div class="log-entry">
@@ -655,29 +767,37 @@
         <div class="log-content">
           <div class="log-meta"><span class="hash mono">2024–2025</span><span class="yr mono">WORK</span></div>
           <h4>Beauty Specialist — Boots</h4>
-          <p>Customer service in a busy retail environment; built communication, teamwork, and sales skills.</p>
+          <p>Customer service in a busy retail environment; built communication, teamwork, and sales skills. With sale target of £1000</p>
         </div>
       </div>
       <div class="log-entry">
         <div class="log-content">
           <div class="log-meta"><span class="hash mono">2025</span><span class="yr mono">START</span></div>
           <h4>Began Freelancing</h4>
-          <p>Started taking on web development projects for local clients and small businesses.</p>
+          <p>Started taking on web development projects for local clients and small businesses, which had a drastic impact on my soft and hard skills. Through these experiences, I developed my technical abilities, improved my communication and problem-solving skills, and learned so much about working with clients, managing projects, and bringing ideas to life. .</p>
         </div>
       </div>
       <div class="log-entry">
         <div class="log-content">
-          <div class="log-meta"><span class="hash mono">2025–Present</span><span class="yr mono">UNI</span></div>
+          <div class="log-meta"><span class="hash mono">2024–Present</span><span class="yr mono">UNI</span></div>
           <h4>MMU — Computer Science</h4>
-          <p>Currently in year two of a BSc (Hons) in Computer Science.</p>
+          <p>BSc (Hons) in Computer Science, with a year of coursework, team projects and freelancing behind me.</p>
         </div>
       </div>
       <div class="log-entry">
-        <div class="log-thumb"><img src="https://farahzaman.netlify.app/gold.jpg" alt="Urenco placement — placeholder, swap for a real photo"></div>
+        <div class="log-thumb"><img src="img/internship-10.jpg" alt="Internship pattern generator"></div>
         <div class="log-content">
-          <div class="log-meta"><span class="hash mono">2026</span><span class="yr mono">PLACEMENT</span></div>
-          <h4>Urenco Placement</h4>
-          <p>8-week data-driven industry placement spanning tech and textiles.</p>
+          <div class="log-meta"><span class="hash mono">2026</span><span class="yr mono">INTERNSHIP</span></div>
+          <h4>Urenco Internship</h4>
+          <p>Completed 8-week internship developing a Python-based parametric pattern generator using 3D body-scan data.
+Collaborated with a team, contributed ideas, and applied problem-solving skills to develop technical solutions.</p>
+        </div>
+      </div>
+      <div class="log-entry">
+        <div class="log-content">
+          <div class="log-meta"><span class="hash mono">2026–Present</span><span class="yr mono">FINAL YEAR</span></div>
+          <h4>Course Rep &amp; Ambassador</h4>
+          <p>Final year of Computer Science, representing Computer Science  as Course Rep and now an official course ambassador.</p>
         </div>
       </div>
     </div>
@@ -688,7 +808,7 @@
   <div class="wrap contact-grid">
     <div class="reveal">
       <div class="eyebrow mono">Get in Touch</div>
-      <h2>Open to graduate placements, internships, and freelance work.</h2>
+      <h2>Hardworking, bubbly and calm, with a positive attitude, a willingness to learn and a passion for taking on new challenges. A reliable team player who enjoys collaborating with others and developing new skills.</h2>
     </div>
     <div class="contact-list reveal">
       <a href="mailto:zamanfarah@myyahoo.com">zamanfarah@myyahoo.com</a>
@@ -710,6 +830,15 @@
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); } });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const lb=document.createElement('div'); lb.className='lightbox'; lb.innerHTML='<img alt="">'; document.body.appendChild(lb);
+  const open=img=>{ lb.querySelector('img').src=img.src; lb.querySelector('img').alt=img.alt; lb.classList.add('open'); };
+  document.querySelectorAll('.shot').forEach(f=>{
+    f.addEventListener('click',()=>open(f.querySelector('img')));
+    f.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(f.querySelector('img')); } });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('open'));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
 </script>
  
 </body>
